@@ -76,7 +76,17 @@
         "drupal/migrate_spreadsheet": "^1.0",
         "drupal/migrate_source_csv": "^2.1",
         "drupal/migrate_tools": "^4.0",
-        "drupal/migrate_plus": "^4.0"
+        "drupal/migrate_plus": "^4.0",
+        "drupal/features": "^3.7",
+        "drupal/config_sync": "^2.0",
+        "drupal/config_distro": "^1.0",
+        "drupal/config_filter": "^1.2",
+        "drupal/config_provider": "^2.0",
+        "drupal/config_devel": "^1.2",
+        "drupal/menu_link_config": "^1.0",
+        "drupal/config_tools": "^1.0",
+        "drupal/config_update": "^1.5",
+        "drupal/config_split": "^1.3"
     },
     "repositories": {
         "drupal": {
