@@ -1,0 +1,113 @@
+sudo: required
+dist: trusty
+language: php
+
+cache:
+  bundler: true
+  apt: true
+  directories:
+    - "$HOME/.composer/cache"
+    - "$HOME/.drush/cache"
+    - "$HOME/.npm"
+php:
+  - 7.0
+  - 7.1
+
+env:
+  - TEST_TAGS=lightning PROFILE_NAME=lightning
+  - TEST_TAGS=~search PROFILE_NAME=subprofile
+
+addons:
+  apt:
+    packages:
+    # Dependencies for Chrome.
+    - libappindicator1
+    - fonts-liberation
+
+before_install:
+  - phpenv config-rm xdebug.ini
+  - composer self-update
+  - composer --version
+
+  # Initialize xvfb (see https://docs.travis-ci.com/user/gui-and-headless-browsers)
+  - export DISPLAY=:99.0
+  - sh -e /etc/init.d/xvfb start
+  - sleep 3
+
+  # Download Chrome Driver
+  - LATEST_CHROMEDRIVER=$(wget -q -O - http://chromedriver.storage.googleapis.com/LATEST_RELEASE)
+  - wget http://chromedriver.storage.googleapis.com/$LATEST_CHROMEDRIVER/chromedriver_linux64.zip
+  - unzip chromedriver_linux64.zip
+  - chmod +x chromedriver
+  - mkdir -p $HOME/.composer/vendor/bin
+  - mv -f chromedriver $HOME/.composer/vendor/bin/
+  - rm chromedriver_linux64.zip
+
+  # Update Chrome.
+  - export CHROME_BIN=/usr/bin/google-chrome
+  - wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+  - sudo dpkg -i google-chrome-stable_current_amd64.deb
+  - rm google-chrome-stable_current_amd64.deb
+  - google-chrome --version
+
+install:
+  # Add Composer's local bin directory to the PATH so that we will be running
+  # our installed versions of Drush, PHPCS, Behat, PhantomJS, etc.
+  - export PATH="$HOME/.composer/vendor/bin:$TRAVIS_BUILD_DIR/vendor/bin:$PATH"
+
+  # Create the MySQL database and add a user for testing.
+  - mysql -u root -e "CREATE DATABASE drupal; CREATE USER 'lightning'@'localhost' IDENTIFIED BY 'lightning'; GRANT ALL ON drupal.* TO 'lightning'@'localhost';"
+
+  # PHP conf tweaks
+  - echo 'max_execution_time = 120' >> drupal.php.ini;
+  - echo 'sendmail_path = /bin/true' >> drupal.php.ini;
+  - phpenv config-add drupal.php.ini
+  - phpenv rehash
+
+  # Build the Lightning code base.
+  - composer install
+
+  # Create custom sub-profile and download custom tests. We need Lightning to be
+  # installed for the sub-profile command to run. But we will reinstall later
+  # and run the update.
+  - lightning install "mysql\://lightning:lightning@127.0.0.1/drupal"
+  - composer require drupal/paragraphs
+  - drupal lightning:subprofile --no-interaction --name="Lightning Extender" --machine-name=subprofile --include=paragraphs --exclude=lightning_search
+  - SUBPROFILE_TESTS=$TRAVIS_BUILD_DIR/docroot/profiles/custom/subprofile/tests
+  - mkdir -p $SUBPROFILE_TESTS/features
+  - curl -o $SUBPROFILE_TESTS/features/subprofile.feature https://gist.githubusercontent.com/balsama/c8c03bb21f7a91a1a87d01ef185a3955/raw
+  - curl -o $SUBPROFILE_TESTS/behat.partial.yml https://gist.githubusercontent.com/balsama/3a60df268f76e57da79c7f179cf7ceaa/raw/b3f5d81f24cd977e60203c4ba27cf8cee1251c13/behat.partial.yml
+  # settings.php must be writeable in order to reinstall.
+  - chmod +w ./docroot/sites/default/settings.php
+
+  # Install Lightning.
+  - lightning install 'mysql\://lightning:lightning@127.0.0.1/drupal' $PROFILE_NAME 'http://127.0.0.1:8080'
+
+  # Update codebase to head.
+  - composer nuke
+  - composer require acquia/lightning:dev-8.x-3.x --no-update
+  - composer update
+  # Run database and Lightning config updates.
+  - drush cache-rebuild
+  - drush updatedb --yes
+  - drush update:lightning --no-interaction
+
+  # Generate the Behat config.
+  - lightning configure:behat 'http://127.0.0.1:8080'
+  - cd docroot
+
+before_script:
+  - drush runserver --default-server=builtin 8080 &>/dev/null &
+
+  # Start Selenium and dump its ginormous log into a temporary file.
+  - jdk_switcher use oraclejdk8
+  - mkdir tmp
+  - selenium-server-standalone -port 4444 -log tmp/selenium2.log &
+  - sleep 5
+  - cd ..
+
+script:
+  - behat --strict --stop-on-failure --config .behat.yml --tags=${TEST_TAGS}
+
+matrix:
+  fast_finish: true
