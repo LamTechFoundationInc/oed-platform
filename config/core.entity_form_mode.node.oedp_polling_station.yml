@@ -1,0 +1,14 @@
+uuid: ac96d907-a262-4cbd-827e-d4757b2729c7
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+    - node
+third_party_settings:
+  lightning_core:
+    description: ''
+id: node.oedp_polling_station
+label: 'Embedded Polling Station'
+targetEntityType: node
+cache: true

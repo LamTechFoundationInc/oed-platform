@@ -1,0 +1,14 @@
+uuid: 5e0a5dcd-4262-4268-8e35-875da9e8273d
+langcode: en
+status: true
+dependencies: {  }
+name: oedp_member_photo
+label: 'Member Photo (750x750)'
+effects:
+  752682c0-434b-4aa9-a69f-df5343798f18:
+    uuid: 752682c0-434b-4aa9-a69f-df5343798f18
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 750
+      height: 750

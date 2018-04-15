@@ -1,0 +1,28 @@
+uuid: 13107538-8392-49b1-8b18-e55dd2d64cb8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.oedp_election_violence_report.body
+    - node.type.oedp_election_violence_report
+  module:
+    - text
+    - user
+id: node.oedp_election_violence_report.default
+targetEntityType: node
+bundle: oedp_election_violence_report
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  scheduled_publication: true

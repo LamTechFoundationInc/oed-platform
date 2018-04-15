@@ -1,0 +1,17 @@
+uuid: 78ba6608-f333-4a40-b5b7-77dbd05b196b
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Person Profile'
+type: oedp_person_profile
+description: 'Use Candidate Profile to enter Candidate Profile information such as biographic, election year, contact, campaign, education and professional information to help the electoral learn more about the candidates.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

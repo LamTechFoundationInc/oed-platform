@@ -1,0 +1,9 @@
+uuid: 5d60b3a1-04a5-4040-9b00-1c9ba763d31d
+langcode: en
+status: true
+dependencies: {  }
+name: 'Document Category'
+vid: oedp_document_category
+description: 'Document Category'
+hierarchy: 0
+weight: 0

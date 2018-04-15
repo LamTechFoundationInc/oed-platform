@@ -1,0 +1,9 @@
+uuid: 7a543dd1-6820-4988-8486-1bc0bdd133cc
+langcode: en
+status: true
+dependencies: {  }
+name: 'Administrative Area'
+vid: oedp_administrative_area
+description: 'Administrative Area (State/Province/Region)'
+hierarchy: 0
+weight: -10

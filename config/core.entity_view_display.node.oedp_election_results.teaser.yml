@@ -1,0 +1,30 @@
+uuid: f53a7ba9-3357-4b59-a656-ae1477ec6aef
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.oedp_election_results.body
+    - node.type.oedp_election_results
+  module:
+    - text
+    - user
+id: node.oedp_election_results.teaser
+targetEntityType: node
+bundle: oedp_election_results
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  scheduled_publication: true

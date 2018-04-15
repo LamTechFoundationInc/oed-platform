@@ -1,0 +1,25 @@
+uuid: 49be218e-4c66-4fd7-aa96-3498704bf868
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: O15STNqaxZJp9WQvMNCRYzhPnpaMVU0W8eVoijQd3rw
+id: layout_manager
+label: 'Layout manager'
+weight: -1
+is_admin: false
+permissions:
+  - 'administer node display'
+  - 'administer panelizer'
+  - 'administer panelizer node landing_page defaults'
+  - 'administer panelizer node oedp_election_results defaults'
+  - 'administer panelizer node oedp_election_violence_report defaults'
+  - 'administer panelizer node oedp_electoral_news_article defaults'
+  - 'administer panelizer node oedp_person_profile defaults'
+  - 'administer panelizer node oedp_polling_centre defaults'
+  - 'administer panelizer node oedp_polling_station defaults'
+  - 'administer panelizer node oedp_score_card defaults'
+  - 'administer panelizer node page defaults'
+  - 'administer panelizer node webform defaults'
+  - 'use text format advanced_html'
+  - 'use text format full_html'

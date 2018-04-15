@@ -1,0 +1,9 @@
+uuid: 118de6c0-54f1-4fb7-b1d5-50ec87d6cef8
+langcode: en
+status: true
+dependencies: {  }
+name: Locality
+vid: oedp_locality
+description: 'Locality (Level 2 Sub Administrative Area like Constituency)'
+hierarchy: 0
+weight: -8

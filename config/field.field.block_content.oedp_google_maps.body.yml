@@ -1,0 +1,22 @@
+uuid: 6c4c1ada-ff78-4d3b-84d9-fc63710ebb7d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.oedp_google_maps
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.oedp_google_maps.body
+field_name: body
+entity_type: block_content
+bundle: oedp_google_maps
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

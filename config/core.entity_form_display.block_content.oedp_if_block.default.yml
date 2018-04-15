@@ -1,0 +1,39 @@
+uuid: 5d363c7e-4599-4e6f-ad02-e552367a389c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.oedp_if_block
+    - field.field.block_content.oedp_if_block.body
+  module:
+    - datetime
+    - text
+id: block_content.oedp_if_block.default
+targetEntityType: block_content
+bundle: oedp_if_block
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 26
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  scheduled_publication:
+    type: datetime_default
+    weight: 20
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

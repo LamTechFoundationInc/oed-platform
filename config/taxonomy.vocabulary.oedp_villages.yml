@@ -1,0 +1,9 @@
+uuid: e33fc997-cc2e-4ae7-8e9e-41e9f78a9626
+langcode: en
+status: true
+dependencies: {  }
+name: Villages
+vid: oedp_villages
+description: 'Villages (Used for Village Headman Elections)'
+hierarchy: 0
+weight: 0

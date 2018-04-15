@@ -1,0 +1,22 @@
+uuid: c46286fa-ed5b-486c-9cc7-c1d7f1db2a5a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.oedp_person_profile
+id: node.oedp_person_profile.status
+field_name: status
+entity_type: node
+bundle: oedp_person_profile
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

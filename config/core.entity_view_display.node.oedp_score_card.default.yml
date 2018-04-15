@@ -1,0 +1,28 @@
+uuid: ad52cb15-4252-4c16-a10d-12d620c84e18
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.oedp_score_card.body
+    - node.type.oedp_score_card
+  module:
+    - text
+    - user
+id: node.oedp_score_card.default
+targetEntityType: node
+bundle: oedp_score_card
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  scheduled_publication: true

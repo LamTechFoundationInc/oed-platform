@@ -1,0 +1,14 @@
+uuid: a47b70d3-15ef-4bed-bd15-a034f315f51f
+langcode: en
+status: true
+dependencies: {  }
+name: oedp_media_tab_image
+label: 'Media Tab Image (850x460)'
+effects:
+  c12bb064-611c-477d-b849-689500466045:
+    uuid: c12bb064-611c-477d-b849-689500466045
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 850
+      height: 460

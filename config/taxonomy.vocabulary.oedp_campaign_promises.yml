@@ -1,0 +1,9 @@
+uuid: 4b527841-8fbf-4ed4-8a9a-820209874281
+langcode: en
+status: true
+dependencies: {  }
+name: 'Campaign Promises'
+vid: oedp_campaign_promises
+description: 'Campaign Promises'
+hierarchy: 0
+weight: 0

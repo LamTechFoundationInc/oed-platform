@@ -1,0 +1,22 @@
+uuid: 8cb04510-00ac-499e-8842-4c524bcd627d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.oedp_background_video_block
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.oedp_background_video_block.body
+field_name: body
+entity_type: block_content
+bundle: oedp_background_video_block
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

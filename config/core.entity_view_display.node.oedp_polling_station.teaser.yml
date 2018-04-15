@@ -1,0 +1,30 @@
+uuid: 5a0ef3b7-8671-4082-9fb8-08c0243a7888
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.oedp_polling_station.body
+    - node.type.oedp_polling_station
+  module:
+    - text
+    - user
+id: node.oedp_polling_station.teaser
+targetEntityType: node
+bundle: oedp_polling_station
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  scheduled_publication: true

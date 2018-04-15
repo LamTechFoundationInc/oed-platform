@@ -1,0 +1,14 @@
+uuid: 6e83bca9-97b1-4270-b235-55a7d117cc40
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.oedp_data_editor
+  module:
+    - user
+id: user_remove_role_action.oedp_data_editor
+label: 'Remove the Data Editor role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: oedp_data_editor

@@ -1,0 +1,17 @@
+uuid: 9340ddea-dfea-42b5-b796-1c89a7113e5c
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_scheduler
+title: 'Default cron handler'
+id: lightning_scheduler_cron
+weight: 0
+module: lightning_scheduler
+callback: lightning_scheduler_cron
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database

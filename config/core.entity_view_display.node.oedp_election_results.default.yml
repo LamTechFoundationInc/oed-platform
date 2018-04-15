@@ -1,0 +1,28 @@
+uuid: 1702237a-a03d-4377-aacd-8b0084519866
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.oedp_election_results.body
+    - node.type.oedp_election_results
+  module:
+    - text
+    - user
+id: node.oedp_election_results.default
+targetEntityType: node
+bundle: oedp_election_results
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  scheduled_publication: true

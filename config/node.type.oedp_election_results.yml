@@ -1,0 +1,17 @@
+uuid: 44cb74f1-877a-4d6a-84e4-51712ed73e31
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Election Results'
+type: oedp_election_results
+description: 'Use this Election Results to enter presidential, member of parliament, mayor, district chairperson, local council and village headman election results by region, district, constituency, ward, and polling station'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false
