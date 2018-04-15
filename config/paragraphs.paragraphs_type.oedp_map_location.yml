@@ -1,0 +1,9 @@
+uuid: fdd8cd37-3c04-468b-9bf6-1b675b9ac953
+langcode: en
+status: true
+dependencies: {  }
+id: oedp_map_location
+label: 'Map Location'
+icon_uuid: null
+description: 'Map Location'
+behavior_plugins: {  }

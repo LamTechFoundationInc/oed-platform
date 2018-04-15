@@ -1,0 +1,23 @@
+uuid: 9869080a-b011-4d6f-b2be-c7a38627b5ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.oedp_if_block
+    - field.field.block_content.oedp_if_block.body
+  module:
+    - text
+id: block_content.oedp_if_block.default
+targetEntityType: block_content
+bundle: oedp_if_block
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  scheduled_publication: true

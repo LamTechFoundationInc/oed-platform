@@ -1,0 +1,71 @@
+uuid: b7b08ac9-218f-4260-82fc-ebe3b9f5f5e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+  module:
+    - ckeditor
+format: full_html
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formatting
+          items:
+            - JustifyLeft
+            - JustifyCenter
+            - JustifyRight
+            - JustifyBlock
+            - HorizontalRule
+            - Bold
+            - Italic
+            - RemoveFormat
+            - Superscript
+            - Subscript
+        -
+          name: Links
+          items:
+            - DrupalLink
+            - DrupalUnlink
+        -
+          name: Lists
+          items:
+            - BulletedList
+            - NumberedList
+            - Indent
+            - Outdent
+            - Table
+        -
+          name: Media
+          items:
+            - Blockquote
+            - node
+            - media_browser
+            - DrupalImage
+        -
+          name: Tools
+          items:
+            - Cut
+            - Copy
+            - PasteText
+            - Paste
+            - PasteFromWord
+            - Source
+            - Undo
+            - Redo
+  plugins:
+    stylescombo:
+      styles: ''
+    language:
+      language_list: un
+image_upload:
+  status: false
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null

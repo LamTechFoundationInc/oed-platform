@@ -1,0 +1,14 @@
+uuid: 30287029-012e-4d41-b04d-cd154ffef22a
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.oedp_data_editor
+  module:
+    - user
+id: user_add_role_action.oedp_data_editor
+label: 'Add the Data Editor role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: oedp_data_editor

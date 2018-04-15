@@ -1,0 +1,16 @@
+uuid: bbf98f9f-1ce9-4a34-97fa-96987fbb67a5
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+third_party_settings:
+  lightning_core:
+    description: 'Data Publisher'
+id: oedp_data_publisher
+label: 'Data Publisher'
+weight: -4
+is_admin: null
+permissions:
+  - 'use text format advanced_html'
+  - 'use text format full_html'

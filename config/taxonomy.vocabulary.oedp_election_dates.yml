@@ -1,0 +1,9 @@
+uuid: cb5ca97a-8997-4a86-9897-f2e569fdbe20
+langcode: en
+status: true
+dependencies: {  }
+name: 'Election Dates'
+vid: oedp_election_dates
+description: 'Election Date'
+hierarchy: 0
+weight: 0

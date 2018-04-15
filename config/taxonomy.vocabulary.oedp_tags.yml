@@ -1,0 +1,9 @@
+uuid: 1b211b27-2ea3-4689-84f4-b049e9afc5d8
+langcode: en
+status: true
+dependencies: {  }
+name: Tags
+vid: oedp_tags
+description: Tags
+hierarchy: 0
+weight: 0

@@ -1,0 +1,22 @@
+uuid: c405ade5-b084-4cec-9b99-56e8ebe9b469
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.oedp_background_image_block
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.oedp_background_image_block.body
+field_name: body
+entity_type: block_content
+bundle: oedp_background_image_block
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

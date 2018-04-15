@@ -1,0 +1,23 @@
+uuid: 0fb82cc8-6e7f-4ad2-adc6-7173969c3799
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.oedp_fancy_tabs_block
+    - field.field.block_content.oedp_fancy_tabs_block.body
+  module:
+    - text
+id: block_content.oedp_fancy_tabs_block.default
+targetEntityType: block_content
+bundle: oedp_fancy_tabs_block
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  scheduled_publication: true

@@ -1,0 +1,17 @@
+uuid: e73a00c5-cb45-4d1d-a039-e85da26e2487
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Score Card'
+type: oedp_score_card
+description: 'Use  Score Card to rate elected and appointed officials'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

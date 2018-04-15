@@ -1,0 +1,39 @@
+uuid: 9a354752-2066-4695-804b-03560a854436
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.oedp_fancy_linked_images_block
+    - field.field.block_content.oedp_fancy_linked_images_block.body
+  module:
+    - datetime
+    - text
+id: block_content.oedp_fancy_linked_images_block.default
+targetEntityType: block_content
+bundle: oedp_fancy_linked_images_block
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 26
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  scheduled_publication:
+    type: datetime_default
+    weight: 20
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

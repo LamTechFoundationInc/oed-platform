@@ -1,0 +1,9 @@
+uuid: 25c43417-3616-4759-9129-52730a2c51aa
+langcode: en
+status: true
+dependencies: {  }
+id: oedp_tab
+label: op_tab
+icon_uuid: null
+description: Tabs
+behavior_plugins: {  }

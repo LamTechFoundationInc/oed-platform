@@ -1,0 +1,23 @@
+uuid: 88e9e6d9-1ade-4a82-8839-ae82388d8294
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.oedp_fancy_linked_images_block
+    - field.field.block_content.oedp_fancy_linked_images_block.body
+  module:
+    - text
+id: block_content.oedp_fancy_linked_images_block.default
+targetEntityType: block_content
+bundle: oedp_fancy_linked_images_block
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  scheduled_publication: true

@@ -1,0 +1,14 @@
+uuid: a57f6401-403a-40a5-b3da-1100175b73b0
+langcode: en
+status: true
+dependencies: {  }
+name: oedp_icons
+label: 'Icons (90x90)'
+effects:
+  eca587fd-14ad-4643-a733-ab54b687909b:
+    uuid: eca587fd-14ad-4643-a733-ab54b687909b
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 90
+      height: 90
