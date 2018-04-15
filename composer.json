@@ -106,7 +106,15 @@
         "drupal/search_autocomplete": "^1.1",
         "drupal/superfish": "^1.2",
         "drupal/config_installer": "^1.7",
-        "drupal/group": "^1.0"
+        "drupal/group": "^1.0",
+        "drupal/realname": "^1.0",
+        "drupal/scheduled_updates": "^1.0",
+        "drupal/views_data_export": "^1.0",
+        "drupal/poll": "^1.1",
+        "drupal/better_exposed_filters": "^3.0",
+        "drupal/checklistapi": "^1.7",
+        "drupal/editor_advanced_link": "^1.4",
+        "drupal/linkit": "^4.3"
     },
     "repositories": {
         "drupal": {
