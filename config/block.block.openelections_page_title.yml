@@ -1,0 +1,20 @@
+uuid: edeb564f-6f08-4c87-a21b-df5d6465f5a1
+langcode: en
+status: true
+dependencies:
+  theme:
+    - openelections
+_core:
+  default_config_hash: M2xRoeATCZ2gSH_UXbxJDd3k2vIgYqpO5Yblc7KHIBQ
+id: openelections_page_title
+theme: openelections
+region: content
+weight: -6
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

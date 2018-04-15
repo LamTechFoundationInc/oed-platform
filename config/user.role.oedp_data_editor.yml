@@ -1,0 +1,16 @@
+uuid: 49916343-396f-4ee9-8ce8-eba373507402
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+third_party_settings:
+  lightning_core:
+    description: 'Data Editor'
+id: oedp_data_editor
+label: 'Data Editor'
+weight: -6
+is_admin: null
+permissions:
+  - 'use text format advanced_html'
+  - 'use text format full_html'

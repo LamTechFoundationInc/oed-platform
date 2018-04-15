@@ -1,0 +1,26 @@
+uuid: ae767a5d-dd77-4425-915b-bbc8051f0a30
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - openelections
+_core:
+  default_config_hash: AjOUzFqFCiDoW3H7mgivq5CzCgT9sACl-hsztBKo-cc
+id: openelections_tools
+theme: openelections
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

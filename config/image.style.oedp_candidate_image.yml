@@ -1,0 +1,14 @@
+uuid: 56822198-054f-4101-a857-97204b2cedac
+langcode: en
+status: true
+dependencies: {  }
+name: oedp_candidate_image
+label: 'Candidate Image (750x750)'
+effects:
+  0c7764dc-a8c5-41e8-abad-fcf0e85f6fb0:
+    uuid: 0c7764dc-a8c5-41e8-abad-fcf0e85f6fb0
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 750
+      height: 750

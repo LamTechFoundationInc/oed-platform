@@ -1,0 +1,28 @@
+uuid: 813c684c-1562-43e7-9d27-f9fec60943e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.oedp_person_profile.body
+    - node.type.oedp_person_profile
+  module:
+    - text
+    - user
+id: node.oedp_person_profile.default
+targetEntityType: node
+bundle: oedp_person_profile
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  scheduled_publication: true

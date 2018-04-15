@@ -1,0 +1,23 @@
+uuid: d15899f6-bd8d-46ae-bae3-3b9dec8cc87f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.oedp_google_maps
+    - field.field.block_content.oedp_google_maps.body
+  module:
+    - text
+id: block_content.oedp_google_maps.default
+targetEntityType: block_content
+bundle: oedp_google_maps
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  scheduled_publication: true

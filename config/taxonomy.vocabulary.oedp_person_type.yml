@@ -1,0 +1,9 @@
+uuid: 7e40eec1-95ce-427a-8c84-9ec246ddf1d0
+langcode: en
+status: true
+dependencies: {  }
+name: 'Person Type'
+vid: oedp_person_type
+description: 'Person Type used in Persons Content Type'
+hierarchy: 0
+weight: 0

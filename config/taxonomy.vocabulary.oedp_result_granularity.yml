@@ -1,0 +1,9 @@
+uuid: 74033475-1dab-4a95-a051-ac427e84ed54
+langcode: en
+status: true
+dependencies: {  }
+name: 'Result Granularity'
+vid: oedp_result_granularity
+description: 'Result Granularity'
+hierarchy: 0
+weight: 0

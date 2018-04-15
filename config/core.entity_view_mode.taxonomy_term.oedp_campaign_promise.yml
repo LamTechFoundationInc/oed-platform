@@ -1,0 +1,14 @@
+uuid: ee4a00b0-ae1e-479e-8725-54bfb1c79486
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+    - taxonomy
+third_party_settings:
+  lightning_core:
+    description: 'Campaign Promise'
+id: taxonomy_term.oedp_campaign_promise
+label: 'Campaign Promise'
+targetEntityType: taxonomy_term
+cache: true

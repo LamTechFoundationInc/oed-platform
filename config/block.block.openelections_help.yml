@@ -1,0 +1,22 @@
+uuid: d0ab66c9-3cf6-46db-9ff0-630ce5272892
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - openelections
+_core:
+  default_config_hash: CTMpiX8cx15cigc1AiibYeu4v-OQbWo8lMUx75jVdzg
+id: openelections_help
+theme: openelections
+region: content
+weight: -6
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

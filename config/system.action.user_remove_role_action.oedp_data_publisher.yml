@@ -1,0 +1,14 @@
+uuid: d01fb05e-7cf6-4de1-9890-341717294bd7
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.oedp_data_publisher
+  module:
+    - user
+id: user_remove_role_action.oedp_data_publisher
+label: 'Remove the Data Publisher role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: oedp_data_publisher

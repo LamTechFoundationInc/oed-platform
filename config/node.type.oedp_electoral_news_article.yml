@@ -1,0 +1,17 @@
+uuid: 726bef1d-308a-46b2-9706-9a382f3b36b3
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Electoral News Article'
+type: oedp_electoral_news_article
+description: 'Use Electoral News Article to submit election-related news articles. These will usually come from official Sierra Leone and International Newspapers or maybe new articles contributed by media and student volunteers in the field'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false
