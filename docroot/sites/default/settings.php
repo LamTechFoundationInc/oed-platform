@@ -5,7 +5,8 @@ $databases = array();
 $config_directories = array(
   CONFIG_SYNC_DIRECTORY => '../config',
  );
- 
+$config_directories['sync'] = '../config';
+
 $settings['hash_salt'] = 'VLjnL3BXd75h9oqhEh0A2SHps8RL5C_Kip_xHGXqaaeG5WNKU7DbMZi38zNubEeMR3iXBc4MTA';
 
 $settings['update_free_access'] = FALSE;
@@ -23,18 +24,8 @@ $settings['file_private_path'] = '../files-private';
 
 $settings['entity_update_batch_size'] = 50;
 
-$databases['default']['default'] = array (
-  'database' => 'electiondataprod',
-  'username' => 'root',
-  'password' => 'root',
-  'prefix' => '',
-  'host' => 'localhost',
-  'port' => '3306',
-  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
-  'driver' => 'mysql',
-);
 $settings['install_profile'] = 'lightning';
-$config_directories['sync'] = 'sites/default/files/config_J6h5obNXKogjCCdTWcLqA-kOOKDjJNGeY095o9gA1mJHeVM1EQLcDQMj-aYVfcf7U9eh4KIypQ/sync';
+
 
 # $config['system.site']['name'] = 'My Drupal site';
 # $config['system.theme']['default'] = 'stark';
@@ -69,8 +60,23 @@ $settings['trusted_host_patterns'] = array(
     ini_set('memory_limit', '2G');
   }
 
-  $conf['cache_backends'][] = 'modules/contrib/memcache/memcache.inc';
-  $conf['cache_default_class'] = 'MemCacheDrupal';
-  $conf['cache_class_cache_form'] = 'DrupalDatabaseCache';
-  $conf['page_cache_without_database'] = TRUE;
-  $conf['page_cache_invoke_hooks'] = FALSE;
+  #$conf['cache_backends'][] = 'modules/contrib/memcache/memcache.inc';
+  #$conf['cache_default_class'] = 'MemCacheDrupal';
+  #$conf['cache_class_cache_form'] = 'DrupalDatabaseCache';
+  #$conf['page_cache_without_database'] = TRUE;
+  #$conf['page_cache_invoke_hooks'] = FALSE;
+
+  $databases['default']['default'] = array (
+    'database' => 'electiondataprod',
+    'username' => 'root',
+    'password' => 'root',
+    'prefix' => '',
+    'host' => 'localhost',
+    'port' => '3306',
+    'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+    'driver' => 'mysql',
+  );
+
+   if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
+     include $app_root . '/' . $site_path . '/settings.local.php';
+   }
