@@ -1,0 +1,22 @@
+uuid: 8fb00d7a-8c47-4ff2-9731-6a60f79a6435
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.oedp_election_results
+id: node.oedp_election_results.promote
+field_name: promote
+entity_type: node
+bundle: oedp_election_results
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

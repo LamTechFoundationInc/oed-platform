@@ -1,0 +1,14 @@
+uuid: b30cde98-1257-4337-932d-f74139e6076e
+langcode: en
+status: true
+dependencies: {  }
+name: oedp_video_gallery_thumbnail
+label: 'Video Gallery thumbnail (400×226 )'
+effects:
+  afcfa093-3e8c-4b8f-beb5-bd8506d5ac65:
+    uuid: afcfa093-3e8c-4b8f-beb5-bd8506d5ac65
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 400
+      height: 226

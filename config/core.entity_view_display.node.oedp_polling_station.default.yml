@@ -1,0 +1,28 @@
+uuid: f3d6f573-9b26-4d80-a7f4-c91aa8c662fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.oedp_polling_station.body
+    - node.type.oedp_polling_station
+  module:
+    - text
+    - user
+id: node.oedp_polling_station.default
+targetEntityType: node
+bundle: oedp_polling_station
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  scheduled_publication: true

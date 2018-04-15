@@ -1,0 +1,22 @@
+uuid: b630e856-11a9-4de5-b861-2d88f9aa895f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.oedp_fancy_linked_images_block
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.oedp_fancy_linked_images_block.body
+field_name: body
+entity_type: block_content
+bundle: oedp_fancy_linked_images_block
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

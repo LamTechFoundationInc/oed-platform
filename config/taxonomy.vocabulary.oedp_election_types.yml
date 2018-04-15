@@ -1,0 +1,9 @@
+uuid: dbe90fef-3b28-4ed8-b5ad-bc1a8be008b6
+langcode: en
+status: true
+dependencies: {  }
+name: 'Election Types'
+vid: oedp_election_types
+description: 'Election Types (presidential, parliamentary and etc)'
+hierarchy: 0
+weight: 0
