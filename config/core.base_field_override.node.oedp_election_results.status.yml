@@ -1,0 +1,22 @@
+uuid: c6af9cac-d81a-4164-9b7c-d4ae7f81bd21
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.oedp_election_results
+id: node.oedp_election_results.status
+field_name: status
+entity_type: node
+bundle: oedp_election_results
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,8 @@
+uuid: 5d6733be-d45d-4583-99c3-874bf67937f4
+langcode: en
+status: true
+dependencies: {  }
+id: oedp_background_image_block
+label: 'Background Image Block'
+revision: 1
+description: 'Use this custom block type to create blocks with background images.'

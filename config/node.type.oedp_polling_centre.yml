@@ -1,0 +1,17 @@
+uuid: ce72bd4c-368f-4109-ab04-8ec5354fa52a
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Polling Centre'
+type: oedp_polling_centre
+description: 'Use Polling Centre to add official NEC Polling Centres for the election year. This information will be used to give voters direction to the centres and stations and to display election results by polling station'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

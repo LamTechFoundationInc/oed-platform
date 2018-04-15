@@ -1,0 +1,14 @@
+uuid: a5d33f83-7cc5-4501-9ad0-8f7369a96c94
+langcode: en
+status: true
+dependencies: {  }
+name: oedp_fli_image
+label: 'Fancy Linked Image (750x750)'
+effects:
+  8ad9b90b-5fe6-4f43-ad8e-c9363b0c80f4:
+    uuid: 8ad9b90b-5fe6-4f43-ad8e-c9363b0c80f4
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 750
+      height: 750

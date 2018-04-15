@@ -1,0 +1,22 @@
+uuid: 9d312b41-4862-4ce1-aa92-734381455b9a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.oedp_polling_centre
+  module:
+    - text
+id: node.oedp_polling_centre.body
+field_name: body
+entity_type: node
+bundle: oedp_polling_centre
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

@@ -1,0 +1,98 @@
+uuid: ff742eb1-edb6-4a5f-b507-818b709ba26e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.landing_page
+    - node.type.oedp_election_results
+    - node.type.oedp_election_violence_report
+    - node.type.oedp_electoral_news_article
+    - node.type.oedp_person_profile
+    - node.type.oedp_polling_centre
+    - node.type.oedp_polling_station
+    - node.type.oedp_score_card
+    - node.type.page
+    - node.type.webform
+  module:
+    - content_moderation
+_core:
+  default_config_hash: T_JxNjYlfoRBi7Bj1zs5Xv9xv1btuBkKp5C1tNrjMhI
+id: editorial
+label: Editorial
+type: content_moderation
+type_settings:
+  states:
+    archived:
+      label: Archived
+      weight: 5
+      published: false
+      default_revision: true
+    draft:
+      label: Draft
+      published: false
+      default_revision: false
+      weight: -5
+    published:
+      label: Published
+      published: true
+      default_revision: true
+      weight: 0
+    review:
+      label: 'In review'
+      weight: -1
+      published: false
+      default_revision: false
+  transitions:
+    archive:
+      label: Archive
+      from:
+        - published
+      to: archived
+      weight: 2
+    archived_draft:
+      label: 'Restore to Draft'
+      from:
+        - archived
+      to: draft
+      weight: 3
+    archived_published:
+      label: Restore
+      from:
+        - archived
+      to: published
+      weight: 4
+    create_new_draft:
+      label: 'Create New Draft'
+      to: draft
+      weight: 0
+      from:
+        - draft
+        - published
+        - review
+    publish:
+      label: Publish
+      to: published
+      weight: 1
+      from:
+        - draft
+        - published
+        - review
+    review:
+      label: Review
+      from:
+        - draft
+        - review
+      to: review
+      weight: 0
+  entity_types:
+    node:
+      - landing_page
+      - oedp_election_results
+      - oedp_election_violence_report
+      - oedp_electoral_news_article
+      - oedp_person_profile
+      - oedp_polling_centre
+      - oedp_polling_station
+      - oedp_score_card
+      - page
+      - webform

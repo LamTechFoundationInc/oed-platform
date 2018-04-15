@@ -1,0 +1,22 @@
+uuid: 0a0c9223-9405-4d0d-9d77-4b34dfc7026a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.oedp_election_violence_report
+id: node.oedp_election_violence_report.promote
+field_name: promote
+entity_type: node
+bundle: oedp_election_violence_report
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

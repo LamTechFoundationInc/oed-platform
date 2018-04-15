@@ -1,0 +1,20 @@
+uuid: 7554f52e-10b4-4122-b6c2-194d7d3f6a18
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - taxonomy
+id: media.field_oedp_election_date
+field_name: field_oedp_election_date
+entity_type: media
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

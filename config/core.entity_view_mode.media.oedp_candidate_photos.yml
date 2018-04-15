@@ -1,0 +1,14 @@
+uuid: 4e963a1b-30fb-47c1-add6-92c03aa5d649
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+    - media
+third_party_settings:
+  lightning_core:
+    description: 'Candidate Photos'
+id: media.oedp_candidate_photos
+label: 'Candidate Photos'
+targetEntityType: media
+cache: true

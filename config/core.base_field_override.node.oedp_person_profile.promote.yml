@@ -1,0 +1,22 @@
+uuid: 43e052ad-fab0-463c-8581-74375fe16b69
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.oedp_person_profile
+id: node.oedp_person_profile.promote
+field_name: promote
+entity_type: node
+bundle: oedp_person_profile
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

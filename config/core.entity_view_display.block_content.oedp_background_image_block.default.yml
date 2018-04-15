@@ -1,0 +1,23 @@
+uuid: 8201a341-f5b2-491c-966a-0aabf2ba00e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.oedp_background_image_block
+    - field.field.block_content.oedp_background_image_block.body
+  module:
+    - text
+id: block_content.oedp_background_image_block.default
+targetEntityType: block_content
+bundle: oedp_background_image_block
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  scheduled_publication: true

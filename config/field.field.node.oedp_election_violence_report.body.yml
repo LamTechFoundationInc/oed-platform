@@ -1,0 +1,22 @@
+uuid: ca2838ed-452e-44e2-9fae-159b36cc2fc3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.oedp_election_violence_report
+  module:
+    - text
+id: node.oedp_election_violence_report.body
+field_name: body
+entity_type: node
+bundle: oedp_election_violence_report
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

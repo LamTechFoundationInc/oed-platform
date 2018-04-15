@@ -1,0 +1,14 @@
+uuid: 90303b13-7a90-4513-bc8a-a69e5810b985
+langcode: en
+status: true
+dependencies: {  }
+name: oedp_landscape_image
+label: 'Landscape Image (850x460)'
+effects:
+  e75d79ea-52a8-4cf2-a69f-cff896de23e8:
+    uuid: e75d79ea-52a8-4cf2-a69f-cff896de23e8
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 850
+      height: 460

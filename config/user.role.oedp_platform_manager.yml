@@ -1,0 +1,16 @@
+uuid: c39f7e7f-91d1-45ad-bed7-9a18f7dd66a5
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+third_party_settings:
+  lightning_core:
+    description: 'Platform Manager'
+id: oedp_platform_manager
+label: 'Platform Manager'
+weight: 0
+is_admin: null
+permissions:
+  - 'use text format advanced_html'
+  - 'use text format full_html'

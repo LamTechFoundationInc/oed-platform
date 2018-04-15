@@ -1,0 +1,22 @@
+uuid: 96b0a11b-de9b-4343-9ebf-6ae9395ee151
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.oedp_election_results
+  module:
+    - text
+id: node.oedp_election_results.body
+field_name: body
+entity_type: node
+bundle: oedp_election_results
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

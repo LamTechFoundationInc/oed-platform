@@ -1,0 +1,22 @@
+uuid: bece6078-5860-4db2-9d2f-2d0209233060
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.oedp_score_card
+  module:
+    - text
+id: node.oedp_score_card.body
+field_name: body
+entity_type: node
+bundle: oedp_score_card
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

@@ -1,0 +1,14 @@
+uuid: e6851508-0c3f-44cd-be99-a061b000ff26
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.oedp_platform_manager
+  module:
+    - user
+id: user_add_role_action.oedp_platform_manager
+label: 'Add the Platform Manager role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: oedp_platform_manager

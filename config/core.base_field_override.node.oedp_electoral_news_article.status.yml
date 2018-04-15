@@ -1,0 +1,22 @@
+uuid: 86bec8ca-9ba6-49a7-86cf-41475acfa98c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.oedp_electoral_news_article
+id: node.oedp_electoral_news_article.status
+field_name: status
+entity_type: node
+bundle: oedp_electoral_news_article
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

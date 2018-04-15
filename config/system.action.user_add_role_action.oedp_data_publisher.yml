@@ -1,0 +1,14 @@
+uuid: d0db1af4-91c4-42dd-80b9-b54de93b80b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.oedp_data_publisher
+  module:
+    - user
+id: user_add_role_action.oedp_data_publisher
+label: 'Add the Data Publisher role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: oedp_data_publisher
