@@ -1,0 +1,28 @@
+uuid: e4e6203a-5b1d-45bd-9f9d-b8f2a1199d97
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.oedp_electoral_news_article.body
+    - node.type.oedp_electoral_news_article
+  module:
+    - text
+    - user
+id: node.oedp_electoral_news_article.default
+targetEntityType: node
+bundle: oedp_electoral_news_article
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  scheduled_publication: true

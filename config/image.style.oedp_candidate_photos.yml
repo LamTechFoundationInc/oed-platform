@@ -1,0 +1,23 @@
+uuid: a2a1d7b0-801f-48fe-9ff6-ed8a46303b3a
+langcode: en
+status: true
+dependencies: {  }
+name: oedp_candidate_photos
+label: candidate_photos
+effects:
+  fc6ef8fc-007e-4fe2-a1a7-8a13f59e88c1:
+    uuid: fc6ef8fc-007e-4fe2-a1a7-8a13f59e88c1
+    id: image_scale
+    weight: 1
+    data:
+      width: 200
+      height: null
+      upscale: false
+  fc53598f-5846-4c24-aa80-1dca03935b32:
+    uuid: fc53598f-5846-4c24-aa80-1dca03935b32
+    id: image_crop
+    weight: 2
+    data:
+      width: 200
+      height: 200
+      anchor: center-center

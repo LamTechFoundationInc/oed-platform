@@ -1,0 +1,8 @@
+uuid: 237530ac-50b3-4056-b073-9b271ab1d15e
+langcode: en
+status: true
+dependencies: {  }
+id: oedp_background_video_block
+label: 'Background Video Block'
+revision: 1
+description: 'Use this custom block type to create blocks with background videos.'

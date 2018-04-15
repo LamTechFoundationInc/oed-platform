@@ -1,0 +1,14 @@
+uuid: 16b10135-0793-4528-a453-d4c4d8df326b
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.oedp_data_creator
+  module:
+    - user
+id: user_remove_role_action.oedp_data_creator
+label: 'Remove the Data Creator role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: oedp_data_creator

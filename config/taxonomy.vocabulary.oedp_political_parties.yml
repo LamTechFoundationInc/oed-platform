@@ -1,0 +1,9 @@
+uuid: 7e15d254-fb6d-4d4f-a4e6-c4ebc143caa9
+langcode: en
+status: true
+dependencies: {  }
+name: 'Political Parties'
+vid: oedp_political_parties
+description: 'Registered Political Parties'
+hierarchy: 0
+weight: 0

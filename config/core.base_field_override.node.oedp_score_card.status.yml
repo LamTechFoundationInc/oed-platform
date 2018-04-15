@@ -1,0 +1,22 @@
+uuid: 62fad745-e477-48df-b9af-9033b15a059c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.oedp_score_card
+id: node.oedp_score_card.status
+field_name: status
+entity_type: node
+bundle: oedp_score_card
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

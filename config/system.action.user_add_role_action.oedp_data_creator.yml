@@ -1,0 +1,14 @@
+uuid: 8fdb3ee0-a21f-4625-87d2-3ba015e4c1da
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.oedp_data_creator
+  module:
+    - user
+id: user_add_role_action.oedp_data_creator
+label: 'Add the Data Creator role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: oedp_data_creator

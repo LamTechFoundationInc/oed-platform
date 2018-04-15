@@ -1,0 +1,29 @@
+uuid: ff962b87-ce0f-4839-8508-8ff383756489
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_oedp_keywords
+    - media.type.document
+    - taxonomy.vocabulary.oedp_tags
+id: media.document.field_oedp_keywords
+field_name: field_oedp_keywords
+entity_type: media
+bundle: document
+label: Keywords
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      oedp_tags: oedp_tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

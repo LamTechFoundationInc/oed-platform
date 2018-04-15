@@ -1,0 +1,22 @@
+uuid: 9b13eda2-01b7-4ec2-ad47-99381b306c86
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.oedp_fltt_block
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.oedp_fltt_block.body
+field_name: body
+entity_type: block_content
+bundle: oedp_fltt_block
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

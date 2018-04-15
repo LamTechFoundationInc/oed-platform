@@ -1,0 +1,9 @@
+uuid: 732a89cf-a9ff-4cf4-95bd-e498323e7f05
+langcode: en
+status: true
+dependencies: {  }
+name: 'Sub Administrative Area'
+vid: oedp_sub_administrative_area
+description: 'Sub Administrative Area (County/District)'
+hierarchy: 0
+weight: -9

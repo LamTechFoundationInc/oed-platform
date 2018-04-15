@@ -1,0 +1,27 @@
+uuid: d6d8f094-9907-412d-9ebb-3d8cca36dbd3
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - options
+id: media.field_oedp_election_round
+field_name: field_oedp_election_round
+entity_type: media
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: 'First Round'
+    -
+      value: '2'
+      label: 'Second Round'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
