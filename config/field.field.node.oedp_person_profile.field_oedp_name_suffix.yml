@@ -1,0 +1,21 @@
+uuid: 0ba6a3ea-bbd7-44b5-afb0-711cd33b14e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oedp_name_suffix
+    - node.type.oedp_person_profile
+  module:
+    - options
+id: node.oedp_person_profile.field_oedp_name_suffix
+field_name: field_oedp_name_suffix
+entity_type: node
+bundle: oedp_person_profile
+label: Suffix
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

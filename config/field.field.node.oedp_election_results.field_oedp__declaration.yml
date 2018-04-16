@@ -1,0 +1,23 @@
+uuid: 6514e1d7-3383-4720-b097-9ffbd13a2933
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oedp__declaration
+    - node.type.oedp_election_results
+  module:
+    - options
+id: node.oedp_election_results.field_oedp__declaration
+field_name: field_oedp__declaration
+entity_type: node
+bundle: oedp_election_results
+label: 'Result Declaration'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: '0'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

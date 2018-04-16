@@ -1,0 +1,19 @@
+uuid: b4a19a78-2af5-4154-9650-dc88020f331b
+langcode: en
+status: true
+dependencies:
+  module:
+    - address
+    - node
+id: node.field_oedp_address
+field_name: field_oedp_address
+entity_type: node
+type: address
+settings: {  }
+module: address
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

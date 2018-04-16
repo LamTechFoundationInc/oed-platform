@@ -1,0 +1,28 @@
+uuid: b6d2e922-2c22-4794-aba0-ef747932a7cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oedp_polling_station
+    - node.type.oedp_election_results
+    - node.type.oedp_polling_station
+id: node.oedp_election_results.field_oedp_polling_station
+field_name: field_oedp_polling_station
+entity_type: node
+bundle: oedp_election_results
+label: 'Polling Station'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      oedp_polling_station: oedp_polling_station
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

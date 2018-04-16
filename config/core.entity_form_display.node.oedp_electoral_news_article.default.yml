@@ -3,10 +3,23 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_form_mode.media.embeded
     - field.field.node.oedp_electoral_news_article.body
+    - field.field.node.oedp_electoral_news_article.field_meta_tags
+    - field.field.node.oedp_electoral_news_article.field_oedp_data_sources
+    - field.field.node.oedp_electoral_news_article.field_oedp_district
+    - field.field.node.oedp_electoral_news_article.field_oedp_election_date
+    - field.field.node.oedp_electoral_news_article.field_oedp_featured_image
+    - field.field.node.oedp_electoral_news_article.field_oedp_featured_video
+    - field.field.node.oedp_electoral_news_article.field_oedp_geolocation
     - node.type.oedp_electoral_news_article
   module:
+    - content_moderation
     - datetime
+    - geofield
+    - inline_entity_form
+    - link
+    - metatag
     - path
     - text
 id: node.oedp_electoral_news_article.default
@@ -16,7 +29,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 121
+    weight: 1
     settings:
       rows: 9
       summary_rows: 3
@@ -25,13 +38,78 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 10
+    weight: 12
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_meta_tags:
+    weight: 8
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_firehose
+    region: content
+  field_oedp_data_sources:
+    weight: 7
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_oedp_district:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_oedp_election_date:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_oedp_featured_image:
+    type: inline_entity_form_complex
+    weight: 4
+    settings:
+      form_mode: embeded
+      override_labels: true
+      label_singular: 'Featured Image'
+      label_plural: 'Featured Images'
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+    region: content
+    third_party_settings: {  }
+  field_oedp_featured_video:
+    type: inline_entity_form_complex
+    weight: 5
+    settings:
+      form_mode: embeded
+      override_labels: true
+      label_singular: 'Featured Video'
+      label_plural: 'Featured Videos'
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+    region: content
+    third_party_settings: {  }
+  field_oedp_geolocation:
+    weight: 6
+    settings:
+      html5_geolocation: false
+    third_party_settings: {  }
+    type: geofield_latlon
+    region: content
+  moderation_state:
+    type: moderation_state_default
+    weight: 9
+    settings: {  }
+    region: content
+    third_party_settings: {  }
   path:
     type: path
-    weight: 30
+    weight: 16
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -39,12 +117,12 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 15
+    weight: 13
     region: content
     third_party_settings: {  }
   scheduled_publication:
     type: datetime_default
-    weight: 20
+    weight: 15
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -52,19 +130,19 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 120
+    weight: 10
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 16
+    weight: 14
     region: content
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: -5
+    weight: 0
     region: content
     settings:
       size: 60
@@ -72,7 +150,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 11
     settings:
       match_operator: CONTAINS
       size: 60
@@ -80,6 +158,8 @@ content:
     region: content
     third_party_settings: {  }
   url_redirects:
-    weight: 50
+    weight: 17
     region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden: {  }

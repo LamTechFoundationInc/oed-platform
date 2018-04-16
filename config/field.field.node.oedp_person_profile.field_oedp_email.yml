@@ -1,0 +1,19 @@
+uuid: c30531c7-8bb4-4b59-ae83-b3e699ed167a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oedp_email
+    - node.type.oedp_person_profile
+id: node.oedp_person_profile.field_oedp_email
+field_name: field_oedp_email
+entity_type: node
+bundle: oedp_person_profile
+label: Email
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

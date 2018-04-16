@@ -1,0 +1,23 @@
+uuid: c1dc6fa4-da29-4f04-afd1-9c0842d3d66a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oedp_percent_voter_turnout
+    - node.type.oedp_election_results
+id: node.oedp_election_results.field_oedp_percent_voter_turnout
+field_name: field_oedp_percent_voter_turnout
+entity_type: node
+bundle: oedp_election_results
+label: 'Percentage voter turnout'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

@@ -11,7 +11,7 @@ id: node.oedp_person_profile.body
 field_name: body
 entity_type: node
 bundle: oedp_person_profile
-label: Body
+label: Profile
 description: ''
 required: false
 translatable: true

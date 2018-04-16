@@ -3,26 +3,128 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.oedp_polling_centre.body
+    - field.field.node.oedp_polling_centre.field_oedp_centre_code
+    - field.field.node.oedp_polling_centre.field_oedp_data_sources
+    - field.field.node.oedp_polling_centre.field_oedp_geolocation
+    - field.field.node.oedp_polling_centre.field_oedp_polling_station
+    - field.field.node.oedp_polling_centre.field_oedp_stations
+    - field.field.node.oedp_polling_centre.field_oedp_total_reg_voters
+    - field.field.node.oedp_polling_centre.field_oedp_ward
     - node.type.oedp_polling_centre
   module:
-    - text
+    - leaflet
+    - link
+    - panelizer
     - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
 id: node.oedp_polling_centre.default
 targetEntityType: node
 bundle: oedp_polling_centre
 mode: default
 content:
-  body:
-    label: hidden
-    type: text_default
-    weight: 101
+  addtoany:
+    weight: 9
+    region: content
     settings: {  }
     third_party_settings: {  }
+  content_moderation_control:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_oedp_centre_code:
+    weight: 1
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_oedp_data_sources:
+    weight: 7
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_oedp_geolocation:
+    weight: 6
+    label: hidden
+    settings:
+      leaflet_map: 'OSM Mapnik'
+      height: 400
+      zoom: 10
+      minPossibleZoom: 0
+      maxPossibleZoom: 18
+      minZoom: 0
+      maxZoom: 18
+      popup: false
+      icon:
+        icon_url: ''
+        shadow_url: ''
+        icon_size:
+          x: 0
+          'y': 0
+        icon_anchor:
+          x: 0
+          'y': 0
+        shadow_anchor:
+          x: 0
+          'y': 0
+        popup_anchor:
+          x: 0
+          'y': 0
+    third_party_settings: {  }
+    type: leaflet_formatter_default
+    region: content
+  field_oedp_polling_station:
+    weight: 4
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_oedp_stations:
+    weight: 3
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_oedp_total_reg_voters:
+    weight: 2
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_oedp_ward:
+    weight: 5
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
     region: content
   links:
-    weight: 100
+    weight: 8
     region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
-  addtoany: true
   scheduled_publication: true

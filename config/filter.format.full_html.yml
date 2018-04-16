@@ -7,7 +7,7 @@ dependencies:
     - entity_embed
 name: 'Full html'
 format: full_html
-weight: 0
+weight: -9
 filters:
   editor_file_reference:
     id: editor_file_reference

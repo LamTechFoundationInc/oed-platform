@@ -1,0 +1,29 @@
+uuid: 2cfe6ef9-5fa5-41fb-bdc5-3118a5d57770
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oedp__level_of_education
+    - node.type.oedp_person_profile
+    - taxonomy.vocabulary.oedp_level_of_education
+id: node.oedp_person_profile.field_oedp__level_of_education
+field_name: field_oedp__level_of_education
+entity_type: node
+bundle: oedp_person_profile
+label: 'Highest Level of Education'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      oedp_level_of_education: oedp_level_of_education
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

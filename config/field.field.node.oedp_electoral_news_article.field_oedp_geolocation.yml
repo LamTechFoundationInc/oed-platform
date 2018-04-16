@@ -1,0 +1,22 @@
+uuid: fd77a0be-6f2f-49f1-854a-79d89c43ad1c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oedp_geolocation
+    - node.type.oedp_electoral_news_article
+  module:
+    - geofield
+id: node.oedp_electoral_news_article.field_oedp_geolocation
+field_name: field_oedp_geolocation
+entity_type: node
+bundle: oedp_electoral_news_article
+label: Geolocation
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  backend: geofield_backend_default
+field_type: geofield

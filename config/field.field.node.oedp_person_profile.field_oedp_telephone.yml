@@ -1,0 +1,21 @@
+uuid: cb0658ac-8f8a-43af-9ca6-46de1d7c73f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oedp_telephone
+    - node.type.oedp_person_profile
+  module:
+    - telephone
+id: node.oedp_person_profile.field_oedp_telephone
+field_name: field_oedp_telephone
+entity_type: node
+bundle: oedp_person_profile
+label: Telephone
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

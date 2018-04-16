@@ -1,0 +1,29 @@
+uuid: f415509e-b381-4268-979d-68d001fa63d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oedp_ward
+    - node.type.oedp_polling_centre
+    - taxonomy.vocabulary.oedp_ward
+id: node.oedp_polling_centre.field_oedp_ward
+field_name: field_oedp_ward
+entity_type: node
+bundle: oedp_polling_centre
+label: Ward
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      oedp_ward: oedp_ward
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

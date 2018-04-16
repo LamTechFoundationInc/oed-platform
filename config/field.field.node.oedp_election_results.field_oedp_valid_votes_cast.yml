@@ -1,0 +1,23 @@
+uuid: 8b866704-3f24-4d36-bcdd-bfe8800dcddf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oedp_valid_votes_cast
+    - node.type.oedp_election_results
+id: node.oedp_election_results.field_oedp_valid_votes_cast
+field_name: field_oedp_valid_votes_cast
+entity_type: node
+bundle: oedp_election_results
+label: 'Number of Valid Votes'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

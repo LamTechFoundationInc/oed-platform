@@ -1,0 +1,19 @@
+uuid: 10bfc880-7414-4c7a-8d1e-18e5b7aaabbc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oedp_middle_given_names
+    - node.type.oedp_person_profile
+id: node.oedp_person_profile.field_oedp_middle_given_names
+field_name: field_oedp_middle_given_names
+entity_type: node
+bundle: oedp_person_profile
+label: 'Middle/Given Names'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,21 @@
+uuid: 7652ad1e-af60-4df9-98f2-197a7d1fce64
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oedp_election_date
+    - node.type.oedp_person_profile
+  module:
+    - datetime
+id: node.oedp_person_profile.field_oedp_election_date
+field_name: field_oedp_election_date
+entity_type: node
+bundle: oedp_person_profile
+label: 'Election Date(s)'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,23 @@
+uuid: 65e59129-d386-4e1b-89b2-1fc761407dc5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oedp_percent_stats_entered
+    - node.type.oedp_election_results
+id: node.oedp_election_results.field_oedp_percent_stats_entered
+field_name: field_oedp_percent_stats_entered
+entity_type: node
+bundle: oedp_election_results
+label: 'Percentage of polling stations entered'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

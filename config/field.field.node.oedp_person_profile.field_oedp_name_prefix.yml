@@ -1,0 +1,21 @@
+uuid: ecff9028-cabd-4198-a4eb-847e908afee3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oedp_name_prefix
+    - node.type.oedp_person_profile
+  module:
+    - options
+id: node.oedp_person_profile.field_oedp_name_prefix
+field_name: field_oedp_name_prefix
+entity_type: node
+bundle: oedp_person_profile
+label: Prefix/Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

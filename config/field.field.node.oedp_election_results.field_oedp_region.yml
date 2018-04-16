@@ -1,0 +1,29 @@
+uuid: 5aadaccf-318b-4c90-ab9d-af19124cda2b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oedp_region
+    - node.type.oedp_election_results
+    - taxonomy.vocabulary.oedp_administrative_area
+id: node.oedp_election_results.field_oedp_region
+field_name: field_oedp_region
+entity_type: node
+bundle: oedp_election_results
+label: Region
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      oedp_administrative_area: oedp_administrative_area
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

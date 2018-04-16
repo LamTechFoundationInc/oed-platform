@@ -4,27 +4,24 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.oedp_polling_centre.body
+    - field.field.node.oedp_polling_centre.field_oedp_centre_code
+    - field.field.node.oedp_polling_centre.field_oedp_ward
     - node.type.oedp_polling_centre
   module:
-    - text
     - user
 id: node.oedp_polling_centre.teaser
 targetEntityType: node
 bundle: oedp_polling_centre
 mode: teaser
 content:
-  body:
-    label: hidden
-    type: text_summary_or_trimmed
-    weight: 101
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
+  content_moderation_control:
+    weight: -20
     region: content
   links:
     weight: 100
     region: content
 hidden:
   addtoany: true
+  field_oedp_centre_code: true
+  field_oedp_ward: true
   scheduled_publication: true

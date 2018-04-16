@@ -1,0 +1,23 @@
+uuid: 4a15d4b0-3fc1-4b92-93d4-204563ca0dac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oedp_data_sources
+    - node.type.oedp_election_results
+  module:
+    - link
+id: node.oedp_election_results.field_oedp_data_sources
+field_name: field_oedp_data_sources
+entity_type: node
+bundle: oedp_election_results
+label: 'Data Source(s)'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

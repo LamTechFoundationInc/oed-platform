@@ -1,0 +1,23 @@
+uuid: 460d23b1-cf85-46d0-9b2c-76122da56704
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oedp_valid_votes_obtained
+    - node.type.oedp_election_results
+id: node.oedp_election_results.field_oedp_valid_votes_obtained
+field_name: field_oedp_valid_votes_obtained
+entity_type: node
+bundle: oedp_election_results
+label: 'Valid Votes Obtained'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

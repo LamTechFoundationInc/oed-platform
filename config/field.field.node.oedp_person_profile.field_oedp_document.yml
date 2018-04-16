@@ -1,0 +1,28 @@
+uuid: 71c9f6aa-e505-4ae6-b630-361b6f0e368d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oedp_document
+    - media.type.document
+    - node.type.oedp_person_profile
+id: node.oedp_person_profile.field_oedp_document
+field_name: field_oedp_document
+entity_type: node
+bundle: oedp_person_profile
+label: Document
+description: Manifesto
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      document: document
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

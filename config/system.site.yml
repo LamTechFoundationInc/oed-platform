@@ -3,9 +3,9 @@ name: 'Open Election Data Platform (OEDP)'
 mail: noreply@elections.sl
 slogan: 'A Framework to quickly implement the principles of open election data'
 page:
-  403: ''
-  404: ''
-  front: /node
+  403: /node/3
+  404: /node/2
+  front: /node/1
 admin_compact_mode: false
 weight_select_max: 100
 langcode: en

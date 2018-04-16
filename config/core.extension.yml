@@ -1,4 +1,5 @@
 module:
+  address: 0
   addtoany: 0
   admin_toolbar: 0
   admin_toolbar_links_access_filter: 0
@@ -39,9 +40,13 @@ module:
   features: 0
   features_ui: 0
   field: 0
+  field_group: 0
   field_ui: 0
   file: 0
   filter: 0
+  geofield: 0
+  geofield_map: 0
+  geophp: 0
   help: 0
   history: 0
   image: 0
@@ -50,6 +55,10 @@ module:
   inline_form_errors: 0
   jsonapi: 0
   layout_discovery: 0
+  leaflet: 0
+  leaflet_markercluster: 0
+  leaflet_more_maps: 0
+  leaflet_views: 0
   libraries: 0
   lightning_api: 0
   lightning_contact_form: 0
@@ -76,6 +85,9 @@ module:
   menu_ui: 0
   metatag: 0
   migrate: 0
+  migrate_plus: 0
+  migrate_source_csv: 0
+  migrate_tools: 0
   node: 0
   openapi: 0
   openapi_redoc: 0
@@ -94,12 +106,17 @@ module:
   search_api: 0
   search_api_db: 0
   serialization: 0
+  settings_tray: 0
   shortcut: 0
   simple_oauth: 0
   simple_oauth_extras: 0
   smtp: 0
+  styled_google_map: 0
+  superfish: 0
   system: 0
   taxonomy: 0
+  taxonomy_manager: 0
+  telephone: 0
   text: 0
   token: 0
   toolbar: 0

@@ -1,0 +1,29 @@
+uuid: f0a002d5-b908-4349-9bfc-5b05adffacac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oedp_city_council
+    - node.type.oedp_election_results
+    - taxonomy.vocabulary.oedp_city_council
+id: node.oedp_election_results.field_oedp_city_council
+field_name: field_oedp_city_council
+entity_type: node
+bundle: oedp_election_results
+label: 'City Council'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      oedp_city_council: oedp_city_council
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

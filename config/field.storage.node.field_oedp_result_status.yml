@@ -1,0 +1,20 @@
+uuid: f110284b-9d6e-4d9a-8b80-e796513e9743
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_oedp_result_status
+field_name: field_oedp_result_status
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

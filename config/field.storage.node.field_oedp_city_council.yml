@@ -1,0 +1,20 @@
+uuid: 5837f7cb-9aa9-4218-a485-3fc17a1f3ffa
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_oedp_city_council
+field_name: field_oedp_city_council
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

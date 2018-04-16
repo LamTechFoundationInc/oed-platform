@@ -1,0 +1,23 @@
+uuid: dc3832d0-c440-4998-a4f1-80f465ed5838
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oedp_stations
+    - node.type.oedp_polling_centre
+id: node.oedp_polling_centre.field_oedp_stations
+field_name: field_oedp_stations
+entity_type: node
+bundle: oedp_polling_centre
+label: 'Number of Stations'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

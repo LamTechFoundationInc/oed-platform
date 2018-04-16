@@ -1,0 +1,29 @@
+uuid: e5689e79-b05d-4d1f-a453-cc7454d5e19a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oedp_district
+    - node.type.oedp_electoral_news_article
+    - taxonomy.vocabulary.oedp_sub_administrative_area
+id: node.oedp_electoral_news_article.field_oedp_district
+field_name: field_oedp_district
+entity_type: node
+bundle: oedp_electoral_news_article
+label: District
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      oedp_sub_administrative_area: oedp_sub_administrative_area
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

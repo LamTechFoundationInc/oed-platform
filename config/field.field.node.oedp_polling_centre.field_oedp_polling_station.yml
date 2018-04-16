@@ -1,0 +1,28 @@
+uuid: 8eea0a3f-2813-43cc-b8f2-727831ef95c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oedp_polling_station
+    - node.type.oedp_polling_centre
+    - node.type.oedp_polling_station
+id: node.oedp_polling_centre.field_oedp_polling_station
+field_name: field_oedp_polling_station
+entity_type: node
+bundle: oedp_polling_centre
+label: 'Polling Station(s)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      oedp_polling_station: oedp_polling_station
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

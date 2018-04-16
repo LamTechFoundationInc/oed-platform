@@ -1,0 +1,20 @@
+uuid: ef553385-2454-4794-b9df-9ec7c8892f61
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_oedp_percent_voter_turnout
+field_name: field_oedp_percent_voter_turnout
+entity_type: node
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

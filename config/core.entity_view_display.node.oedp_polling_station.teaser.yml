@@ -4,27 +4,42 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.oedp_polling_station.body
+    - field.field.node.oedp_polling_station.field_oedp_centre_code
+    - field.field.node.oedp_polling_station.field_oedp_total_reg_voters
     - node.type.oedp_polling_station
   module:
-    - text
+    - panelizer
     - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
 id: node.oedp_polling_station.teaser
 targetEntityType: node
 bundle: oedp_polling_station
 mode: teaser
 content:
-  body:
-    label: hidden
-    type: text_summary_or_trimmed
-    weight: 101
+  field_oedp_centre_code:
+    type: string
+    weight: 0
+    region: content
+    label: inline
     settings:
-      trim_length: 600
+      link_to_entity: false
     third_party_settings: {  }
+  field_oedp_total_reg_voters:
+    type: number_integer
+    weight: 1
     region: content
-  links:
-    weight: 100
-    region: content
+    label: inline
+    settings:
+      thousand_separator: ','
+      prefix_suffix: true
+    third_party_settings: {  }
 hidden:
   addtoany: true
+  content_moderation_control: true
+  links: true
   scheduled_publication: true

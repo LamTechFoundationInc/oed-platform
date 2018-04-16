@@ -1,0 +1,18 @@
+uuid: ca99dcc9-65f9-4ef4-930d-327fc804e04b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.oedp_polling_station
+id: node.oedp_polling_station.title
+field_name: title
+entity_type: node
+bundle: oedp_polling_station
+label: 'Station Name'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

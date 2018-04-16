@@ -1,0 +1,28 @@
+uuid: ce0b9378-b137-4095-8bae-22e1e819ebbb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oedp_featured_image
+    - media.type.image
+    - node.type.oedp_electoral_news_article
+id: node.oedp_electoral_news_article.field_oedp_featured_image
+field_name: field_oedp_featured_image
+entity_type: node
+bundle: oedp_electoral_news_article
+label: 'Featured Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

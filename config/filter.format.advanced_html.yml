@@ -4,5 +4,5 @@ status: true
 dependencies: {  }
 name: 'Advanced HTML'
 format: advanced_html
-weight: 0
+weight: -8
 filters: {  }

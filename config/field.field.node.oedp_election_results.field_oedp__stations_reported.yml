@@ -1,0 +1,23 @@
+uuid: c0781f17-e7b7-4c2f-99b5-e55357d51760
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oedp__stations_reported
+    - node.type.oedp_election_results
+id: node.oedp_election_results.field_oedp__stations_reported
+field_name: field_oedp__stations_reported
+entity_type: node
+bundle: oedp_election_results
+label: 'Polling Stations Reported'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

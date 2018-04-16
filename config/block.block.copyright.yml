@@ -1,0 +1,25 @@
+uuid: 94535c85-6162-429d-bec6-78a72f2752a2
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:7df972c3-b2c4-49f0-a0f9-ecf10ca7b939'
+  module:
+    - block_content
+  theme:
+    - openelections
+id: copyright
+theme: openelections
+region: sub_footer_first
+weight: -6
+provider: null
+plugin: 'block_content:7df972c3-b2c4-49f0-a0f9-ecf10ca7b939'
+settings:
+  id: 'block_content:7df972c3-b2c4-49f0-a0f9-ecf10ca7b939'
+  label: Copyright
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

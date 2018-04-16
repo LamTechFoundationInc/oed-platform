@@ -3,26 +3,54 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.oedp_polling_station.body
+    - field.field.node.oedp_polling_station.field_oedp_centre_code
+    - field.field.node.oedp_polling_station.field_oedp_total_reg_voters
     - node.type.oedp_polling_station
   module:
-    - text
+    - panelizer
     - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
 id: node.oedp_polling_station.default
 targetEntityType: node
 bundle: oedp_polling_station
 mode: default
 content:
-  body:
-    label: hidden
-    type: text_default
-    weight: 101
+  addtoany:
+    weight: 4
+    region: content
     settings: {  }
     third_party_settings: {  }
+  content_moderation_control:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_oedp_centre_code:
+    weight: 1
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_oedp_total_reg_voters:
+    weight: 2
+    label: inline
+    settings:
+      thousand_separator: ','
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
     region: content
   links:
-    weight: 100
+    weight: 3
     region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
-  addtoany: true
   scheduled_publication: true

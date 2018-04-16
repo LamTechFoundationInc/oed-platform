@@ -1,0 +1,22 @@
+uuid: 524d2b45-7ed8-4b0c-afe6-32e24589cbc6
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.oedp_polling_centre
+id: node.oedp_polling_centre.promote
+field_name: promote
+entity_type: node
+bundle: oedp_polling_centre
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

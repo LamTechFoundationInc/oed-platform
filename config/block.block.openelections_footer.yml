@@ -12,8 +12,8 @@ _core:
   default_config_hash: z77IO--FpVNocL_USk1NLYQMjXClo49ZMXGt3usiEzg
 id: openelections_footer
 theme: openelections
-region: sub_footer_first
-weight: 0
+region: footer
+weight: -5
 provider: null
 plugin: 'system_menu_block:footer'
 settings:

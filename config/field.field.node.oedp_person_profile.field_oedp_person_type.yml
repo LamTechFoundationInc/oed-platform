@@ -1,0 +1,29 @@
+uuid: 7e1bb368-36d2-4bc6-a8d9-10a223f17694
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oedp_person_type
+    - node.type.oedp_person_profile
+    - taxonomy.vocabulary.oedp_person_type
+id: node.oedp_person_profile.field_oedp_person_type
+field_name: field_oedp_person_type
+entity_type: node
+bundle: oedp_person_profile
+label: 'Person Type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      oedp_person_type: oedp_person_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

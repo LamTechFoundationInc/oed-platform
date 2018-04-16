@@ -1,0 +1,20 @@
+uuid: dbf3a851-b463-45cc-8d06-7ce2d54362ae
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_oedp_percent_stats_entered
+field_name: field_oedp_percent_stats_entered
+entity_type: node
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

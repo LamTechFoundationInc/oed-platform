@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.media.embedded
     - field.field.media.image.field_media_in_library
     - field.field.media.image.image
+    - image.style.oedp_media_tab_image
     - media.type.image
   module:
     - image
@@ -21,13 +22,15 @@ content:
     weight: 0
     label: hidden
     settings:
-      image_style: ''
+      image_style: oedp_media_tab_image
       image_link: ''
     third_party_settings: {  }
     region: content
 hidden:
+  addtoany: true
   created: true
   field_media_in_library: true
   name: true
+  scheduled_publication: true
   thumbnail: true
   uid: true

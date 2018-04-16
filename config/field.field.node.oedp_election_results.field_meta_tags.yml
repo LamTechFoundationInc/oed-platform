@@ -1,0 +1,23 @@
+uuid: 04bfe1df-2203-4355-b93e-5573c3f4670f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.oedp_election_results
+  module:
+    - metatag
+id: node.oedp_election_results.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: oedp_election_results
+label: 'Meta tags'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 'a:0:{}'
+default_value_callback: ''
+settings: {  }
+field_type: metatag

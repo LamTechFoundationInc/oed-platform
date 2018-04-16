@@ -1,0 +1,23 @@
+uuid: 94969dcd-f579-467e-a890-5a3c8610c145
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oedp_votes_cast
+    - node.type.oedp_election_results
+id: node.oedp_election_results.field_oedp_votes_cast
+field_name: field_oedp_votes_cast
+entity_type: node
+bundle: oedp_election_results
+label: 'Number of votes cast'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

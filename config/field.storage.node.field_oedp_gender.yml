@@ -1,0 +1,30 @@
+uuid: 08afdeeb-acb2-4a9b-af82-f31d442ca603
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_oedp_gender
+field_name: field_oedp_gender
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Male
+      label: Male
+    -
+      value: Female
+      label: Female
+    -
+      value: Other
+      label: Other
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

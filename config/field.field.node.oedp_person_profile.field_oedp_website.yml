@@ -1,0 +1,23 @@
+uuid: 1e0c8e9b-fa5a-4694-922a-0ba6f755dd47
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oedp_website
+    - node.type.oedp_person_profile
+  module:
+    - link
+id: node.oedp_person_profile.field_oedp_website
+field_name: field_oedp_website
+entity_type: node
+bundle: oedp_person_profile
+label: Website
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

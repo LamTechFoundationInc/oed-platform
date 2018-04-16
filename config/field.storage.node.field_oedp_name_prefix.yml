@@ -1,0 +1,45 @@
+uuid: 617ecc01-2740-4097-bfb6-f1a52dc9bcc1
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_oedp_name_prefix
+field_name: field_oedp_name_prefix
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Mr.
+      label: Mr.
+    -
+      value: Ms.
+      label: Ms.
+    -
+      value: Rev.
+      label: Rev.
+    -
+      value: Prof.
+      label: Prof.
+    -
+      value: Dr.
+      label: Dr.
+    -
+      value: Hon.
+      label: Hon.
+    -
+      value: PC
+      label: PC
+    -
+      value: Ambassador
+      label: Ambassador
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

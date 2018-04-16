@@ -1,0 +1,23 @@
+uuid: 3b0cad78-2088-46ba-91ab-795869233e1c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oedp_data_sources
+    - node.type.oedp_person_profile
+  module:
+    - link
+id: node.oedp_person_profile.field_oedp_data_sources
+field_name: field_oedp_data_sources
+entity_type: node
+bundle: oedp_person_profile
+label: 'Data Source(s)'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

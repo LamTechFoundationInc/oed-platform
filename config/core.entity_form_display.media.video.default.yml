@@ -8,6 +8,7 @@ dependencies:
     - media.type.video
   module:
     - content_moderation
+    - datetime
     - path
     - video_embed_field
 _core:
@@ -53,6 +54,14 @@ content:
   preview:
     weight: 0
     region: content
+    settings: {  }
+    third_party_settings: {  }
+  scheduled_publication:
+    type: datetime_default
+    weight: 20
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:

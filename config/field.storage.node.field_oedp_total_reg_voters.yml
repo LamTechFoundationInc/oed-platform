@@ -1,0 +1,20 @@
+uuid: f8e10e61-5e7d-4b76-a5dc-81d5e3a74c41
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_oedp_total_reg_voters
+field_name: field_oedp_total_reg_voters
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

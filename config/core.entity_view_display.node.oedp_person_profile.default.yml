@@ -4,8 +4,34 @@ status: true
 dependencies:
   config:
     - field.field.node.oedp_person_profile.body
+    - field.field.node.oedp_person_profile.field_meta_tags
+    - field.field.node.oedp_person_profile.field_oedp__level_of_education
+    - field.field.node.oedp_person_profile.field_oedp_address
+    - field.field.node.oedp_person_profile.field_oedp_data_sources
+    - field.field.node.oedp_person_profile.field_oedp_date_of_birth
+    - field.field.node.oedp_person_profile.field_oedp_document
+    - field.field.node.oedp_person_profile.field_oedp_election_date
+    - field.field.node.oedp_person_profile.field_oedp_email
+    - field.field.node.oedp_person_profile.field_oedp_featured_image
+    - field.field.node.oedp_person_profile.field_oedp_first_name
+    - field.field.node.oedp_person_profile.field_oedp_gender
+    - field.field.node.oedp_person_profile.field_oedp_middle_given_names
+    - field.field.node.oedp_person_profile.field_oedp_name_prefix
+    - field.field.node.oedp_person_profile.field_oedp_name_suffix
+    - field.field.node.oedp_person_profile.field_oedp_person_type
+    - field.field.node.oedp_person_profile.field_oedp_political_party
+    - field.field.node.oedp_person_profile.field_oedp_previous_employer
+    - field.field.node.oedp_person_profile.field_oedp_profession
+    - field.field.node.oedp_person_profile.field_oedp_surname
+    - field.field.node.oedp_person_profile.field_oedp_telephone
+    - field.field.node.oedp_person_profile.field_oedp_website
     - node.type.oedp_person_profile
   module:
+    - address
+    - datetime
+    - link
+    - metatag
+    - options
     - text
     - user
 id: node.oedp_person_profile.default
@@ -19,6 +45,181 @@ content:
     weight: 101
     settings: {  }
     third_party_settings: {  }
+    region: content
+  content_moderation_control:
+    weight: -20
+    region: content
+  field_meta_tags:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
+  field_oedp__level_of_education:
+    weight: 115
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_oedp_address:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
+    region: content
+  field_oedp_data_sources:
+    weight: 103
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_oedp_date_of_birth:
+    weight: 105
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_oedp_document:
+    type: entity_reference_entity_view
+    weight: 116
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_oedp_election_date:
+    weight: 106
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_oedp_email:
+    weight: 108
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_oedp_featured_image:
+    weight: 120
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_oedp_first_name:
+    weight: 117
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_oedp_gender:
+    weight: 109
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_oedp_middle_given_names:
+    weight: 119
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_oedp_name_prefix:
+    weight: 112
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_oedp_name_suffix:
+    weight: 111
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_oedp_person_type:
+    weight: 121
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_oedp_political_party:
+    weight: 107
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_oedp_previous_employer:
+    weight: 114
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_oedp_profession:
+    weight: 113
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_oedp_surname:
+    weight: 118
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_oedp_telephone:
+    weight: 122
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_oedp_website:
+    weight: 110
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
     region: content
   links:
     weight: 100

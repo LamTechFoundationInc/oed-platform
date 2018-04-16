@@ -4,25 +4,116 @@ status: true
 dependencies:
   config:
     - field.field.node.oedp_electoral_news_article.body
+    - field.field.node.oedp_electoral_news_article.field_meta_tags
+    - field.field.node.oedp_electoral_news_article.field_oedp_data_sources
+    - field.field.node.oedp_electoral_news_article.field_oedp_district
+    - field.field.node.oedp_electoral_news_article.field_oedp_election_date
+    - field.field.node.oedp_electoral_news_article.field_oedp_featured_image
+    - field.field.node.oedp_electoral_news_article.field_oedp_featured_video
+    - field.field.node.oedp_electoral_news_article.field_oedp_geolocation
     - node.type.oedp_electoral_news_article
   module:
+    - datetime
+    - geofield
+    - link
+    - metatag
+    - panelizer
     - text
     - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
 id: node.oedp_electoral_news_article.default
 targetEntityType: node
 bundle: oedp_electoral_news_article
 mode: default
 content:
+  addtoany:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   body:
     label: hidden
     type: text_default
-    weight: 101
+    weight: 3
     settings: {  }
     third_party_settings: {  }
     region: content
-  links:
-    weight: 100
+  content_moderation_control:
+    weight: 0
     region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_meta_tags:
+    weight: 7
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
+  field_oedp_data_sources:
+    weight: 8
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_oedp_district:
+    weight: 4
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_oedp_election_date:
+    weight: 5
+    label: hidden
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_oedp_featured_image:
+    type: entity_reference_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: embedded
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_oedp_featured_video:
+    type: entity_reference_entity_view
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: embedded
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_oedp_geolocation:
+    weight: 6
+    label: hidden
+    settings:
+      output_format: wkt
+    third_party_settings: {  }
+    type: geofield_default
+    region: content
+  links:
+    weight: 9
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
-  addtoany: true
   scheduled_publication: true

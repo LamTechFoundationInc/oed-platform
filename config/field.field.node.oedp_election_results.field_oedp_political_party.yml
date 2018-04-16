@@ -1,0 +1,29 @@
+uuid: de527543-3470-4ef9-9d90-e2e17a0fc35e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oedp_political_party
+    - node.type.oedp_election_results
+    - taxonomy.vocabulary.oedp_political_parties
+id: node.oedp_election_results.field_oedp_political_party
+field_name: field_oedp_political_party
+entity_type: node
+bundle: oedp_election_results
+label: 'Political Party'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      oedp_political_parties: oedp_political_parties
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

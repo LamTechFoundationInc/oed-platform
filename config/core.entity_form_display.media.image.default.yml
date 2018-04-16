@@ -9,6 +9,7 @@ dependencies:
     - media.type.image
   module:
     - content_moderation
+    - datetime
     - image_widget_crop
     - path
 _core:
@@ -56,6 +57,12 @@ content:
   path:
     type: path
     weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  scheduled_publication:
+    type: datetime_default
+    weight: 20
     region: content
     settings: {  }
     third_party_settings: {  }

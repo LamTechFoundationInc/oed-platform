@@ -1,0 +1,23 @@
+uuid: b14ef748-d410-4329-af68-5a672c42b016
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.oedp_electoral_news_article
+  module:
+    - metatag
+id: node.oedp_electoral_news_article.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: oedp_electoral_news_article
+label: 'Meta tags'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 'a:0:{}'
+default_value_callback: ''
+settings: {  }
+field_type: metatag

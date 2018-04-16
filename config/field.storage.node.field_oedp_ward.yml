@@ -1,0 +1,20 @@
+uuid: 528462bd-4cf4-4cc6-a1f5-764fb179368b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_oedp_ward
+field_name: field_oedp_ward
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

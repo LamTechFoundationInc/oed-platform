@@ -1,0 +1,29 @@
+uuid: fae7e6d1-4a51-4063-8115-9afa1534cd37
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oedp_previous_employer
+    - node.type.oedp_person_profile
+    - taxonomy.vocabulary.oedp_employers
+id: node.oedp_person_profile.field_oedp_previous_employer
+field_name: field_oedp_previous_employer
+entity_type: node
+bundle: oedp_person_profile
+label: 'Previous Employer'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      oedp_employers: oedp_employers
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

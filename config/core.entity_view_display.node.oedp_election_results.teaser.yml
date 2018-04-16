@@ -4,27 +4,22 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.oedp_election_results.body
+    - field.field.node.oedp_election_results.field_oedp_political_party
     - node.type.oedp_election_results
   module:
-    - text
     - user
 id: node.oedp_election_results.teaser
 targetEntityType: node
 bundle: oedp_election_results
 mode: teaser
 content:
-  body:
-    label: hidden
-    type: text_summary_or_trimmed
-    weight: 101
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
+  content_moderation_control:
+    weight: -20
     region: content
   links:
     weight: 100
     region: content
 hidden:
   addtoany: true
+  field_oedp_political_party: true
   scheduled_publication: true

@@ -1,0 +1,21 @@
+uuid: 0cb0d8e3-34e3-43c7-a84f-9bb5dc20f5bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_election_round
+    - node.type.oedp_election_results
+  module:
+    - options
+id: node.oedp_election_results.field_election_round
+field_name: field_election_round
+entity_type: node
+bundle: oedp_election_results
+label: 'Election Round'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

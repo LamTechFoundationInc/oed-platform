@@ -1,0 +1,23 @@
+uuid: f0db2e6e-3302-455a-968e-c176bc94758a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oedp_valid_vote_percent
+    - node.type.oedp_election_results
+id: node.oedp_election_results.field_oedp_valid_vote_percent
+field_name: field_oedp_valid_vote_percent
+entity_type: node
+bundle: oedp_election_results
+label: 'Valid Vote Percent Obtained'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

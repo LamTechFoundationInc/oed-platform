@@ -1,0 +1,28 @@
+uuid: a85a93e1-84d6-4173-9e94-ba5ea806989e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oedp_candidate
+    - node.type.oedp_election_results
+    - node.type.oedp_person_profile
+id: node.oedp_election_results.field_oedp_candidate
+field_name: field_oedp_candidate
+entity_type: node
+bundle: oedp_election_results
+label: Candidate
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      oedp_person_profile: oedp_person_profile
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

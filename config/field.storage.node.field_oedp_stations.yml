@@ -1,0 +1,20 @@
+uuid: 64f54f9a-535f-4890-b788-23f27df9de90
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_oedp_stations
+field_name: field_oedp_stations
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

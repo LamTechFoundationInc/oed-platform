@@ -1,0 +1,29 @@
+uuid: 8d125958-472f-4c03-8a39-59dd23974a89
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oedp_result_granularity
+    - node.type.oedp_election_results
+    - taxonomy.vocabulary.oedp_result_granularity
+id: node.oedp_election_results.field_oedp_result_granularity
+field_name: field_oedp_result_granularity
+entity_type: node
+bundle: oedp_election_results
+label: 'Result Granularity'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      oedp_result_granularity: oedp_result_granularity
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

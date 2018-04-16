@@ -1,0 +1,21 @@
+uuid: 18b9d039-ddf7-4025-a784-7cf08ee1674b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oedp_gender
+    - node.type.oedp_person_profile
+  module:
+    - options
+id: node.oedp_person_profile.field_oedp_gender
+field_name: field_oedp_gender
+entity_type: node
+bundle: oedp_person_profile
+label: Gender
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,14 @@
+uuid: d0aed487-4358-49ca-8f51-6c4bfd51c3e8
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+    - media
+third_party_settings:
+  lightning_core:
+    description: ''
+id: media.embeded
+label: Embeded
+targetEntityType: media
+cache: true

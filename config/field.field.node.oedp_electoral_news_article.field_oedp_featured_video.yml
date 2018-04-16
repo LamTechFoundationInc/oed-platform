@@ -1,0 +1,28 @@
+uuid: bf08d44a-c09d-457d-9437-9a79e4e5c28a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oedp_featured_video
+    - media.type.video
+    - node.type.oedp_electoral_news_article
+id: node.oedp_electoral_news_article.field_oedp_featured_video
+field_name: field_oedp_featured_video
+entity_type: node
+bundle: oedp_electoral_news_article
+label: 'Featured Video'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      video: video
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

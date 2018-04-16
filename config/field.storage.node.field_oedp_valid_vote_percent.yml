@@ -1,0 +1,20 @@
+uuid: 4e2ed9f5-e1c9-407a-8d3a-921de18f45f1
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_oedp_valid_vote_percent
+field_name: field_oedp_valid_vote_percent
+entity_type: node
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

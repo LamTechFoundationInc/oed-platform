@@ -1,0 +1,19 @@
+uuid: 74c0c747-1904-4431-97af-cc70578e47f4
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - telephone
+id: node.field_oedp_telephone
+field_name: field_oedp_telephone
+entity_type: node
+type: telephone
+settings: {  }
+module: telephone
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

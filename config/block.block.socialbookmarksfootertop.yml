@@ -1,0 +1,25 @@
+uuid: 7e34ac8c-5f40-4098-b905-a91185ceea18
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f769f5f5-d318-4238-9fe3-0db3dcb58cd1'
+  module:
+    - block_content
+  theme:
+    - openelections
+id: socialbookmarksfootertop
+theme: openelections
+region: footer_top_second
+weight: 0
+provider: null
+plugin: 'block_content:f769f5f5-d318-4238-9fe3-0db3dcb58cd1'
+settings:
+  id: 'block_content:f769f5f5-d318-4238-9fe3-0db3dcb58cd1'
+  label: 'Social Bookmarks (Footer top)'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,23 @@
+uuid: 29c7c603-f729-42fa-84cd-76ba4aa464f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oedp_data_sources
+    - node.type.oedp_polling_centre
+  module:
+    - link
+id: node.oedp_polling_centre.field_oedp_data_sources
+field_name: field_oedp_data_sources
+entity_type: node
+bundle: oedp_polling_centre
+label: 'Data Source(s)'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

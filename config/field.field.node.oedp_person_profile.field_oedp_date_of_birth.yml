@@ -1,0 +1,21 @@
+uuid: 9a3bb039-b781-4e40-8d82-4e429feef148
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oedp_date_of_birth
+    - node.type.oedp_person_profile
+  module:
+    - datetime
+id: node.oedp_person_profile.field_oedp_date_of_birth
+field_name: field_oedp_date_of_birth
+entity_type: node
+bundle: oedp_person_profile
+label: 'Date of Birth'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

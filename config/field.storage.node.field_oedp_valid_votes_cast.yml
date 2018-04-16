@@ -1,0 +1,20 @@
+uuid: 3b160d75-72e3-4fa3-a2dd-48f6101e09eb
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_oedp_valid_votes_cast
+field_name: field_oedp_valid_votes_cast
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

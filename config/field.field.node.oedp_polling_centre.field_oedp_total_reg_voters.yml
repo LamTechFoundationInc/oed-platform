@@ -1,0 +1,23 @@
+uuid: e0fe4d79-346b-445b-903f-37783b721ad4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oedp_total_reg_voters
+    - node.type.oedp_polling_centre
+id: node.oedp_polling_centre.field_oedp_total_reg_voters
+field_name: field_oedp_total_reg_voters
+entity_type: node
+bundle: oedp_polling_centre
+label: 'Total Registered Voters'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer
