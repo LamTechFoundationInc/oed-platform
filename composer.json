@@ -114,7 +114,9 @@
         "drupal/better_exposed_filters": "^3.0",
         "drupal/checklistapi": "^1.7",
         "drupal/editor_advanced_link": "^1.4",
-        "drupal/linkit": "^4.3"
+        "drupal/linkit": "^4.3",
+        "drupal/geofield_map": "^1.44",
+        "drupal/taxonomy_manager": "1.x-dev"
     },
     "repositories": {
         "drupal": {
